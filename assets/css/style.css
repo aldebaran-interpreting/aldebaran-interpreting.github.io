@@ -44,12 +44,17 @@ hr {
     background: transparent;
     border-color: transparent;
     font-size: 24px;
+}
+
+.nav.navbar-nav li a {
     color: black;
 }
+
 
 /* Effect 1: Brackets */
 
 .nav a::before, .nav a::after {
+    color: black;
     display: inline-block;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -63,6 +68,7 @@ hr {
     -webkit-transform: translateX(20px);
     -moz-transform: translateX(20px);
     transform: translateX(20px);
+    color: black;
 }
 
 .nav a::after {
@@ -71,6 +77,7 @@ hr {
     -webkit-transform: translateX(-20px);
     -moz-transform: translateX(-20px);
     transform: translateX(-20px);
+    color: black;
 }
 
 .nav a:hover::before, .nav a:hover::after, .nav a:focus::before, .nav a:focus::after {
@@ -78,6 +85,7 @@ hr {
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
     transform: translateX(0px);
+    color: black;
 }
 
 .jumbotron {
@@ -97,7 +105,7 @@ hr {
     font-style: italic;
 }
 
-.jumbotron .col-md-8, .resume-full{
+.jumbotron .col-md-8, .resume-full {
     background: rgb(211, 211, 211);
     /* This is for ie8 and below */
     background: rgba(211, 211, 211, 0.8);
@@ -186,16 +194,16 @@ hr {
 }
 
 .resume-full p {
-  padding-left: 20px;
-  font-size: 16px;
+    padding-left: 20px;
+    font-size: 16px;
 }
 
 .resume-full span {
-  font-weight: bold;
-  font-size: 16px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .resume-full a {
-  float: right;
-  margin: 0px 5px 0px 5px;
+    float: right;
+    margin: 0px 5px 0px 5px;
 }
