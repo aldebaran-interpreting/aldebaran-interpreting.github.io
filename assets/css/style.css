@@ -16,6 +16,10 @@ body, html {
     background-size: cover;
 }
 
+ul li {
+  font-size: 20px;
+}
+
 hr {
     display: block;
     height: 1px;
@@ -25,10 +29,26 @@ hr {
     padding: 0;
 }
 
+#nad-image {
+  width: 50%;
+  margin: 20px 0px 20px 0px;
+}
+
+#nysut-image {
+  height: 80px;
+  margin: 20px 0px 20px 0px;
+}
+
+#footer {
+  color: white;
+  text-align: center;
+}
+
 #home-image {
     margin-top: -10px;
     width: 50px;
     height: 50px;
+    border-radius: 50%;
 }
 
 .navbar-header {
@@ -88,6 +108,42 @@ hr {
     color: black;
 }
 
+.jumbotron a::before, .jumbotron a::after {
+    color: black;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.jumbotron h3 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+    color: black;
+}
+
+.jumbotron h3 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+    color: black;
+}
+
+.jumbotron h3 a:hover::before, .jumbotron h3 a:hover::after, .jumbotron h3 a:focus::before, .jumbotron h3 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+    color: black;
+}
+
+
 .jumbotron {
     background: rgb(211, 211, 211);
     /* This is for ie8 and below */
@@ -105,49 +161,11 @@ hr {
     font-style: italic;
 }
 
-.jumbotron .col-md-8, .resume-full {
-    background: rgb(211, 211, 211);
-    /* This is for ie8 and below */
-    background: rgba(211, 211, 211, 0.8);
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px;
+.header-image img {
+  display: block;
+  margin: auto;
+  border-radius: 5px;
 }
-
-
-/* Effect 1: Brackets */
-
-.resume-header a::before, .resume-header a::after {
-    display: inline-block;
-    opacity: 0;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-    transition: transform 0.3s, opacity 0.2s;
-}
-
-.resume-header a::before {
-    margin-right: 10px;
-    content: '[';
-    -webkit-transform: translateX(20px);
-    -moz-transform: translateX(20px);
-    transform: translateX(20px);
-}
-
-.resume-header a::after {
-    margin-left: 10px;
-    content: ']';
-    -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
-    transform: translateX(-20px);
-}
-
-.resume-header a:hover::before, .resume-header a:hover::after, .resume-header a:focus::before, .resume-header a:focus::after {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
-}
-
-
 /* Blur */
 
 .wrapper {
